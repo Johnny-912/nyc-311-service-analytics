@@ -1,0 +1,7 @@
+"borough","total_requests","with_closure_time","missing_closure_time","median_hours"
+"BROOKLYN",9268,9228,40,50.98
+"QUEENS",6707,6673,34,29.56
+"MANHATTAN",4642,4630,12,22.22
+"BRONX",3439,3422,17,27.33
+"STATEN ISLAND",2296,2282,14,33.65
+"Unspecified",18,18,0,25.05
