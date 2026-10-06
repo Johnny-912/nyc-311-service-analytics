@@ -15,3 +15,12 @@ https://data.cityofnewyork.us/d/erm2-nwe9
 ## Planned tools
 
 R and RStudio, SQL, Excel, VS Code, GitHub, and Quarto.
+
+## January 2025 results
+
+The dataset contains 26,370 DSNY requests created in January 2025.
+
+Snow or Ice was the most common category, with 5,161 requests
+(19.6% of the month's total).
+
+![Top 10 DSNY request types](outputs/january_top10_requests.png)
