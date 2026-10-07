@@ -1,6 +1,8 @@
 # NYC 311 SERVICE ANALYTICS PROJECT
 An analysis of real NYC 311 service requests to understand demand and time to closure.
 
+[View the live dashboard](https://johnny-912.github.io/nyc-311-service-analytics/)
+
 ## Project questions
 
 1. Which sanitation request types were most common in 2025?
