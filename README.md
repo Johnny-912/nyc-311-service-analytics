@@ -26,3 +26,10 @@ Snow or Ice was the most common category, with 5,161 requests
 (19.6% of the month's total).
 
 ![Top 10 DSNY request types](outputs/january_top10_requests.png)
+
+## Excel Report
+
+[Download the January 2025 Excel report](outputs/january_report.xlsx)
+
+Includes request percentages, missing closure-time checks,
+a chart of the top 10 request types, and key findings.
