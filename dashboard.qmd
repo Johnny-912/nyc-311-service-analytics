@@ -62,6 +62,13 @@ knitr::kable(
 )
 ```
 
+## Row {height=35%}
+
+```{r}
+#| title: Daily request volume
+knitr::include_graphics("outputs/january_daily_requests.png")
+```
+
 ## Row {height=25%}
 
 ::: {.card title="How to interpret this dashboard"}
