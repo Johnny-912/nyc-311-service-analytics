@@ -1,15 +1,15 @@
-# 1. Load the January data
+// Load the January data
 january <- read.csv(
   "data/raw/dsny_jan2025.csv",
   colClasses = "character",
   na.strings = ""
 )
 
-# 2. Preserve the original dates
+// Preserve the original dates
 created_text <- january$created_date
 closed_text <- january$closed_date
 
-# 3. Convert the dates
+// Convert the dates
 january$created_date <- as.POSIXct(
   created_text,
   format = "%Y-%m-%dT%H:%M:%S",
@@ -22,7 +22,7 @@ january$closed_date <- as.POSIXct(
   tz = "America/New_York"
 )
 
-# 4. Validate the conversion
+// Validate the conversion
 parse_failures <- c(
   created = sum(!is.na(created_text) & is.na(january$created_date)),
   closed = sum(!is.na(closed_text) & is.na(january$closed_date))
@@ -31,7 +31,7 @@ parse_failures <- c(
 print(parse_failures)
 stopifnot(all(parse_failures == 0))
 
-# 5. Calculate closure times
+// Calculate closure times
 january$closure_hours <- as.numeric(
   difftime(
     january$closed_date,
@@ -46,7 +46,7 @@ stopifnot(negative_count == 0)
 
 print(summary(january$closure_hours))
 
-# 6. Summarize each problem type
+// Summarize each problem type
 january_summary <- do.call(
   rbind,
   lapply(split(january, january$complaint_type), function(group) {
@@ -83,7 +83,7 @@ stopifnot(
 
 print(head(january_summary, 10), row.names = FALSE)
 
-# 7. Save the results
+// Save the results
 dir.create("data/processed", recursive = TRUE, showWarnings = FALSE)
 dir.create("outputs", showWarnings = FALSE)
 
